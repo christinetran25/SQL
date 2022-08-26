@@ -1,0 +1,27 @@
+-- create fashion store database
+
+CREATE TABLE store(id INTEGER PRIMARY KEY, clothes TEXT, quantity INTEGER, color TEXT, price INTEGER);
+INSERT INTO store VALUES (1, "shirt", 4,"red",10);
+INSERT INTO store VALUES (2, "pant", 2,"black",20);
+INSERT INTO store VALUES (3, "sock", 16,"grey",3);
+INSERT INTO store VALUES (4, "shoe", 12,"black",35);
+INSERT INTO store VALUES (5, "sweater", 6,"white",14);
+INSERT INTO store VALUES (6, "hat", 7,"brown",8);
+INSERT INTO store VALUES (7, "jean", 5,"blue",23);
+INSERT INTO store VALUES (8, "dress", 8,"gold",40);
+INSERT INTO store VALUES (9, "romper", 10,"black",32);
+INSERT INTO store VALUES (10, "skirt", 14,"black",9);
+INSERT INTO store VALUES (11, "glove", 3,"black",11);
+INSERT INTO store VALUES (12, "bra", 16,"nude",17);
+INSERT INTO store VALUES (13, "undies", 20,"black",5);
+INSERT INTO store VALUES (14, "jacket", 6,"white",20);
+INSERT INTO store VALUES (15, "purse", 14,"brown",200);
+
+-- select everything from database and order by id
+SELECT * FROM store ORDER BY id;
+
+-- total quantity of all the items
+SELECT SUM(quantity) FROM store;
+
+-- database ordered by price and less than or equal to 25
+SELECT * FROM store WHERE price <=25 ORDER BY price;
