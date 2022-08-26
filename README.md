@@ -1,2 +1,3 @@
-# SQL
-SQL Portfolio
+# SQL 
+Christine Tran's SQL Portfolio
+
